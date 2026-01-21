@@ -1,201 +1,247 @@
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
 
-            <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Backend & Security Engineer</title>
+    <meta name="description"
+        content="Portfolio of a Backend Engineer specializing in Machine Learning, Security, and Cryptography.">
 
-            <!-- =====BOX ICONS===== -->
-            <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 
-            <title>Portfolio</title>
-        </head>
-        <body>
-            <!--===== HEADER =====-->
-            <header class="l-header">
-                <nav class="nav bd-grid">
-                    <div>
-                        <a href="#" class="nav__logo">Anom Chakma</a>
-                    </div>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 
-                    <div class="nav__menu" id="nav-menu">
-                        <ul class="nav__list">
-                            <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                            <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        </ul>
-                    </div>
+<body>
 
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class='bx bx-menu'></i>
-                    </div>
-                </nav>
-            </header>
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="command-symbol">></span> <span class="text">ANOM</span><span class="cursor">_</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link"><span class="code-tag">01.</span> About</a></li>
+                <li><a href="#skills" class="nav-link"><span class="code-tag">02.</span> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><span class="code-tag">03.</span> Projects</a></li>
+                <li><a href="#contact" class="nav-link"><span class="code-tag">04.</span> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
 
-            <main class="l-main">
-                <!--===== HOME =====-->
-                <section class="home bd-grid" id="home">
-                    <div class="home__data">
-                        <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Anom</span><br>Security Engineer</h1>
-
-                        
-                    </div>
-
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/anom-chakma-anom1408/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                            
-                            <a href="https://github.com/anom979905" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                        </div>
-
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                                <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                            </g>
-                        </svg>
-                    </div>
-                </section>
-
-                <!--===== ABOUT =====-->
-                <section class="about section " id="about">
-                    <h2 class="section-title">About</h2>
-
-                    <div class="about__container bd-grid">
-                        <div class="about__img">
-                            <img src="assets/img/about.jpg" alt="">
-                        </div>
-                        
-                        <div>
-                            <h2 class="about__subtitle">Hello, I'm Anom</h2>
-                            <p class="about__text">A passionate Software Developer & Security Engineer with a focus on creating secure, efficient, and scalable digital solutions. My goal is to ensure that systems and data are not only functional but also protected from threats and vulnerabilities. With experience in both software development and various aspects of cybersecurity, I design and implement solutions that prioritize integrity, confidentiality, and performance. Whether it’s building robust applications, identifying potential risks, implementing security measures, or staying updated on the latest industry trends, I am dedicated to making the digital world smarter and safer.                                  
-                    </div>
-                </section>
-
-                <!--===== SKILLS =====-->
-                <section class="skills section" id="skills">
-                    <h2 class="section-title">Skills</h2>
-
-                    <div class="skills__container bd-grid">          
-                        <div>
-                            <h2 class="skills__subtitle">Profesional Skills</h2>
-                            
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bx-shield skills__icon'></i>
-                                    <span class="skills__name">Network Security</span>
-
-                                </div>
-                                
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxs-lock-alt skills__icon'></i>
-                                    <span class="skills__name">Cryptography</span>
-
-                                </div>
-                                
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxs-lock-alt skills__icon'></i>
-                                    <span class="skills__name">Web Security</span>
-
-
-                                </div>
-                                
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxs-search skills__icon'></i>
-                                    <span class="skills__name">Forensics</span>
-
-                                </div>
-                                
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxs-lock skills__icon'></i>
-                                        <span class="skills__name">Information Security</span>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                        
-                        <div>              
-                            <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                        </div>
-                    </div>
-                </section>
-
-                <!--===== WORK =====-->
-                <section class="work section" id="work">
-                    <h2 class="section-title">Work</h2>
-
-                    <div class="work__container bd-grid">
-                        <a href="" class="work__img">
-                            <img src="assets/img/work1.jpg" alt="">
-                        </a>
-                        <a href="" class="work__img">
-                            <img src="assets/img/work2.jpg" alt="">
-                        </a>
-                        <a href="" class="work__img">
-                            <img src="assets/img/work3.webp" alt="">
-                        </a>
-                        <a href="" class="work__img">
-                            <img src="assets/img/work4.jpg" alt="">
-                        </a>
-                        <a href="" class="work__img">
-                            <img src="assets/img/work5.jpg" alt="">
-                        </a>
-                        <a href="" class="work__img">
-                            <img src="assets/img/work6.jpg" alt="">
-                        </a>
-                    </div>
-                </section>
-
-                <!--===== CONTACT =====-->
-                <section class="contact section" id="contact">
-                    <h2 class="section-title">Contact</h2>
-
-                    <div class="contact__container bd-grid">
-                        <form action="" class="contact__form">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                            <input type="button" value="Send" class="contact__button button">
-                        </form>
-                    </div>
-                </section>
-            </main>
-
-            <!--===== FOOTER =====-->
-            <footer class="footer">
-                <p class="footer__title">Anom</p>
-                <div class="footer__social">
-                    <a href="https://https://www.facebook.com/anom350" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://www.instagram.com/anom350/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://x.com/AnomChakma" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <p class="overline">Hi, my name is</p>
+                <h1 class="glitch" data-text="Anom">Anom</h1>
+                <h2 class="subtitle">I architect secure systems & intelligence.</h2>
+                <div class="typewriter-container">
+                    <span id="typewriter"></span><span class="cursor">|</span>
                 </div>
-                
-            </footer>
+                <p class="description">
+                    Software Developer specialized in <strong>Backend Engineering</strong>, <strong>Machine
+                        Learning</strong>, and <strong>Cryptography</strong>.
+                    Building the secure infrastructure of tomorrow.
+                </p>
+                <a href="#projects" class="cta-btn">Check out my work</a>
+            </div>
+            <div class="hero-visual">
+                <!-- Can be a canvas animation or svg -->
+                <canvas id="matrix-canvas"></canvas>
+            </div>
+        </section>
 
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title"><span class="code-tag">01.</span> About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm a developer who loves digging deep into the internals of systems. My interest in
+                        technology started when I tried to understand how encryption works, leading me down the rabbit
+                        hole of <strong>Cybersecurity</strong> and <strong>Backend Development</strong>.
+                    </p>
+                    <p>
+                        Fast-forward to today, I've had the privilege of working on complex problems involving
+                        large-scale data processing and predictive modeling. My main focus these days is building
+                        accessible, inclusive products and digital experiences for a variety of clients.
+                    </p>
+                    <p>Here are a few technologies I've been working with recently:</p>
+                    <ul class="skills-list">
+                        <li>Python (FastAPI/Django)</li>
+                        <li>Rust</li>
+                        <li>TensorFlow/PyTorch</li>
+                        <li>Docker & Kubernetes</li>
+                        <li>PostgreSQL</li>
+                        <li>Cryptography Primitive</li>
+                    </ul>
+                </div>
+                <div class="about-img">
+                    <div class="img-wrapper">
+                        <!-- Placeholder for valid image -->
+                        <div class="placeholder-profile">
+                            <i class="fa-solid fa-user-secret"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!--===== SCROLL REVEAL =====-->
-            <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title"><span class="code-tag">02.</span> Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Go</span>
+                        <span>Node.js</span>
+                        <span>FastAPI</span>
+                        <span>Microservices</span>
+                        <span>GraphQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-brain"></i> Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>Scikit-learn</span>
+                        <span>NLP</span>
+                        <span>Computer Vision</span>
+                        <span>MLOps</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-shield-halved"></i> Security & Crypto</h3>
+                    <div class="skill-tags">
+                        <span>Cryptography</span>
+                        <span>Penetration Testing</span>
+                        <span>Network Security</span>
+                        <span>OAuth2/OIDC</span>
+                        <span>Blockchain</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-terminal"></i> DevOps & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>AWS</span>
+                        <span>CI/CD</span>
+                        <span>Git</span>
+                        <span>Linux</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!--===== MAIN JS =====-->
-            <script src="assets/js/main.js"></script>
-        </body>
-    </html>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title"><span class="code-tag">03.</span> Some Things I've Built</h2>
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">Secure Chat Protocol</h3>
+                        <div class="project-description">
+                            <p>A minimalist, end-to-end encrypted messaging application. Implements the Signal Protocol
+                                for double ratchet encryption, ensuring forward secrecy.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Rust</li>
+                            <li>WebAssembly</li>
+                            <li>Socket.io</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">Malware Detection System</h3>
+                        <div class="project-description">
+                            <p>Machine learning pipeline that analyzes portable executable (PE) files to classify them
+                                as benign or malicious using random forest classifiers.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Python</li>
+                            <li>Scikit-learn</li>
+                            <li>FastAPI</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">DeFi Trading Bot</h3>
+                        <div class="project-description">
+                            <p>Automated trading bot for decentralized exchanges. Includes smart contract interactions,
+                                risk management strategies, and real-time data analysis.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Solidity</li>
+                            <li>Node.js</li>
+                            <li>Ethers.js</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact">
+            <p class="code-tag">04. What's Next?</p>
+            <h2 class="title">Get In Touch</h2>
+            <p class="contact-desc">
+                Currently looking for new opportunities in the Security/ML space. Whether you have a question or just
+                want to say hi, my inbox is always open.
+            </p>
+            <a href="mailto:anom@example.com" class="cta-btn big-btn">Say Hello</a>
+        </section>
+    </main>
 
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p class="copyright">Designed & Built by Anom</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
